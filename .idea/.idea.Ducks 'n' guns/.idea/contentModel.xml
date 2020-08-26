@@ -7,6 +7,10 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="Disparo" t="Include">
+            <e p="Disparo.cs" t="Include" />
+            <e p="disparoNormal.cs" t="Include" />
+          </e>
           <e p="Movimiento" t="Include">
             <e p="moveScript.cs" t="Include" />
           </e>

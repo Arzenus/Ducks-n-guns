@@ -18,6 +18,8 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/newScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movimiento/moveScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Disparo/disparoNormal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Disparo/Disparo.cs" />
       </list>
     </option>
   </component>
@@ -41,7 +43,7 @@
       <updated>1598403865622</updated>
       <workItem from="1598403871045" duration="5262000" />
       <workItem from="1598458939568" duration="4033000" />
-      <workItem from="1598463528165" duration="3039000" />
+      <workItem from="1598463528165" duration="5164000" />
     </task>
     <servers />
   </component>
