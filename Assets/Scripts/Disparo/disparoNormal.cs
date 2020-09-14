@@ -9,6 +9,8 @@ public class disparoNormal : Disparo
     // Update is called once per frame
     void Update()
     {
-        accion();
+        Accion();
+        
+        CambioProyectil();
     }
 }

@@ -5,15 +5,40 @@ using UnityEngine.UIElements;
 
 public abstract class Disparo : MonoBehaviour
 {
-    [SerializeField] private float potencia = 0;
+    public float potencia = 40f;
 
     [SerializeField] private float danio = 0;
 
-    public void accion()
+    public GameObject proyectil;
+
+    public void Accion()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetButtonDown("Fire1"))
         {
-            transform.Translate(potencia, 0, 0);
+            GameObject p = Instantiate(proyectil, transform.position, transform.rotation);
+
+            Rigidbody rigidbodyP = p.GetComponent<Rigidbody>();
+
+            rigidbodyP.velocity = transform.forward * potencia;
         }
     }
+
+    public void CambioProyectil()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            potencia = 40f;
+        }
+        
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            potencia = 90f;
+        }
+        
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            potencia = 15f;
+        }
+    }
+
 }
