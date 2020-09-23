@@ -526,7 +526,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ef3e0254e4306b4e8463d98c6630389, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scripDeLaBala: {fileID: 1233507367}
+  elPrefabDeLaBala: {fileID: 581229901741090087, guid: 16435e39a76f2be42ac48f39e61306ef, type: 3}
+  lanzador: {fileID: 1233507365}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,7 +712,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1233507366}
-  - component: {fileID: 1233507367}
   m_Layer: 0
   m_Name: Lanzador
   m_TagString: Untagged
@@ -726,28 +726,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233507365}
-  m_LocalRotation: {x: -0.6427876, y: -0, z: -0, w: 0.7660445}
-  m_LocalPosition: {x: 0, y: -0.4920946, z: 0.055390112}
-  m_LocalScale: {x: 4.5, y: 4.4999995, z: 4.4999995}
+  m_LocalRotation: {x: 0.6755903, y: -0, z: -0, w: -0.73727727}
+  m_LocalPosition: {x: 0, y: 0, z: 0.28}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 834385922}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1233507367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1233507365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c139ca5119680b4f9e98df69de97144, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  potencia: 40
-  danio: 0
-  proyectil: {fileID: 8369253961557849315, guid: 16435e39a76f2be42ac48f39e61306ef, type: 3}
+  m_LocalEulerAnglesHint: {x: 275, y: 0, z: 0}
 --- !u!1 &1375950111
 GameObject:
   m_ObjectHideFlags: 0

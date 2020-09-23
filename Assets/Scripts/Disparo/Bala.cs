@@ -7,21 +7,7 @@ namespace Disparo
         public float potencia = 40f;
 
         [SerializeField] private float danio = 0;
-
-        public GameObject proyectil;
-    
-
-        public void Accion()
-        {
-            if (Input.GetButtonDown("Fire1"))
-            {
-                GameObject p = Instantiate(proyectil, transform.position, transform.rotation);
-
-                Rigidbody rigidbodyP = p.GetComponent<Rigidbody>();
-
-                rigidbodyP.AddForce(transform.forward * potencia,ForceMode.Impulse);
-            }
-        }
+        
 
         public void CambioProyectil(float potenciaDelProyectil)
         {
@@ -34,14 +20,6 @@ namespace Disparo
             {
                 Destroy(gameObject);
             }
-        }
-
-        /// <summary>
-        /// /////////////////////
-        /// </summary>
-        void Update()
-        {
-            Accion();
         }
     }
 }

@@ -53,6 +53,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Arma/Seleccion.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Disparo/iBuffeador.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Disparo/Bala.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Arma/Disparar.cs" />
       </list>
     </option>
   </component>
@@ -79,10 +80,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="7052">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="7052" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -105,6 +106,7 @@
       <workItem from="1600440408049" duration="3605000" />
       <workItem from="1600819929551" duration="187000" />
       <workItem from="1600820161763" duration="2854000" />
+      <workItem from="1600888392549" duration="2378000" />
     </task>
     <servers />
   </component>
