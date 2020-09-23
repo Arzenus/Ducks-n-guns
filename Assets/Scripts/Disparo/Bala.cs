@@ -1,47 +1,47 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UIElements;
+﻿using UnityEngine;
 
-public class Bala : MonoBehaviour
+namespace Disparo
 {
-    public float potencia = 40f;
-
-    [SerializeField] private float danio = 0;
-
-    public GameObject proyectil;
-
-    public void Accion()
+    public class Bala : MonoBehaviour
     {
-        if (Input.GetButtonDown("Fire1"))
+        public float potencia = 40f;
+
+        [SerializeField] private float danio = 0;
+
+        public GameObject proyectil;
+    
+
+        public void Accion()
         {
-            GameObject p = Instantiate(proyectil, transform.position, transform.rotation);
+            if (Input.GetButtonDown("Fire1"))
+            {
+                GameObject p = Instantiate(proyectil, transform.position, transform.rotation);
 
-            Rigidbody rigidbodyP = p.GetComponent<Rigidbody>();
+                Rigidbody rigidbodyP = p.GetComponent<Rigidbody>();
 
-            rigidbodyP.AddForce(transform.forward * potencia,ForceMode.Impulse);
+                rigidbodyP.AddForce(transform.forward * potencia,ForceMode.Impulse);
+            }
         }
-    }
 
-    public void CambioProyectil(float potenciaDelProyectil)
-    {
-        potencia = potenciaDelProyectil;
-    }
-
-    private void OnTriggerEnter(Collider elOtroObjeto)
-    {
-        if (elOtroObjeto.gameObject.CompareTag("Enemigo"))
+        public void CambioProyectil(float potenciaDelProyectil)
         {
-            Destroy(gameObject);
+            potencia = potenciaDelProyectil;
         }
-    }
 
-    /// <summary>
-    /// /////////////////////
-    /// </summary>
-    void Update()
-    {
-        Accion();
+        private void OnCollisionEnter(Collision elOtroObjeto)
+        {
+            if (elOtroObjeto.gameObject.CompareTag("Enemigo"))
+            {
+                Destroy(gameObject);
+            }
+        }
+
+        /// <summary>
+        /// /////////////////////
+        /// </summary>
+        void Update()
+        {
+            Accion();
+        }
     }
 }
