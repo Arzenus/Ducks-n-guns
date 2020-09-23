@@ -11,8 +11,8 @@
             <e p="Seleccion.cs" t="Include" />
           </e>
           <e p="Disparo" t="Include">
-            <e p="Disparo.cs" t="Include" />
-            <e p="disparoNormal.cs" t="Include" />
+            <e p="Bala.cs" t="Include" />
+            <e p="iBuffeador.cs" t="Include" />
           </e>
           <e p="Movimiento" t="Include">
             <e p="moveScript.cs" t="Include" />

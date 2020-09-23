@@ -5,10 +5,17 @@ using UnityEngine;
 public class Seleccion : MonoBehaviour
 {
     private Color original;
+    
+    private Material material = null;
+
+    public Bala scripDeLaBala;
+    
     // Start is called before the first frame update
     void Start()
     {
-        original = gameObject.GetComponent<Renderer>().material.color;
+        material = gameObject.GetComponent<Renderer>().material;
+
+        original = material.color;
     }
 
     // Update is called once per frame
@@ -16,17 +23,23 @@ public class Seleccion : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            gameObject.GetComponent<Renderer>().material.color = original;
+            material.color = original;
+
+            scripDeLaBala.CambioProyectil(45f);
         }
         
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            gameObject.GetComponent<Renderer>().material.color = Color.red;
+            material.color = Color.red;
+            
+            scripDeLaBala.CambioProyectil(90f);
         }
         
         if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            gameObject.GetComponent<Renderer>().material.color = Color.blue;
+        { 
+            material.color = Color.blue;
+            
+            scripDeLaBala.CambioProyectil(15f);
         }
     }
 }
